@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/CSS.css">
 
-    <title>Accessability</title>
-    
-</ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/CSS.css">
+
+  <title>Accessability</title>
+
+  </ul>
 
 </head>
-<body class="body">
 
-    <header class="header">
-        <nav>
-            <img src="../Image Folder/logo.png" alt="" class="logo" width="80">
-               
-            <ul>
-                <li><a class="link" href="index.html">Home</a></li>
-                <li><a class="link" href="About Cho Co Lat.html">About Cho Co Lat</a></li>
-                <li><a class="link" href="Features of choc o lat.html">features of Cho Co Lat</a></li>
-                <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
-                <li><a class="link" href="Accessability.html">Accessability</a></li>
-                <li><a class="link" href="ContactUs.html">Contact Us</a></li>
-                <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-                <li><a class="link" href="Feedback.html">Feedback</a></li>
-                <li><a class="link" href="Response.html">Response</a></li>
-            </ul>
-        </nav>
-   <p> Accessibility would be a major part of our Choc O lat website for all people especially those with disabilities should get access if they have visual impairments, auditory impairments, motor disabilities, and cognitive impairments. Etc. These are all that we would include in our website.</p>
-    <img src="../Image Folder/Web Accessability 1.png" alt="">
-    <img src="../Image Folder/Web Accessability 2 .png" alt="">
-    <p>© 2024 Choc O Lat. All rights reserved.</p>
-    <ul>
+<body>
+
+  <img class="header_img" src="../Image Folder/logo.png">
+
+
+  <header class="header">
+    <nav>
+      <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-menu">
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="./AboutChoCoLat.html">About</a></li>
+        <li><a class="link" href="Features of choc o lat.html">Features</a></li>
+        <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
+        <li><a class="link" href="Accessability.html">Accessibility</a></li>
+        <li><a class="link" href="ContactUs.html">Contact Us</a></li>
+        <li><a class="link" href="Newsletter.html">Newsletter</a></li>
+        <li><a class="link" href="Feedback.html">Feedback</a></li>
+        <li><a class="link" href="Response.html">Response</a></li>
+      </ul>
+
+      <!-- JavaScript to Toggle Menu -->
+      <script>
+        function toggleMenu() {
+          document.getElementById("nav-menu").classList.toggle("active");
+        }
+      </script>
+    </nav>
+
+  </header>
+  <p> Accessibility would be a major part of our Choc O lat website for all people especially those with disabilities
+    should get access if they have visual impairments, auditory impairments, motor disabilities, and cognitive
+    impairments. Etc. These are all that we would include in our website.</p>
+  <img src="../Image Folder/Web Accessability 1.png" alt="">
+  <img src="../Image Folder/Web Accessability 2 .png" alt="">
+  <ul>
+    <footer>
+      <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
+    </footer>
+
 </html>

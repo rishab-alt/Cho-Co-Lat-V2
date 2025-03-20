@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,60 @@
 
     <title>featuresofchocoLat</title>
 </head>
+
 <body>
-    <nav>
-        <img src="../Image Folder/logo.png" alt="" class="logo" width="80">
-           
-        <ul>
-            <li><a class="link" href="index.html">Home</a></li>
-            <li><a class="link" href="About Cho Co Lat.html">About Cho Co Lat</a></li>
-            <li><a class="link" href="Features of choc o lat.html">features of Cho Co Lat</a></li>
-            <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
-            <li><a class="link" href="Accessability.html">Accessability</a></li>
-            <li><a class="link" href="ContactUs.html">Contact Us</a></li>
-            <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-            <li><a class="link" href="Feedback.html">Feedback</a></li>
-            <li><a class="link" href="Response.html">Response</a></li>
-        </ul>
-    </nav>
+    <img class="header_img" src="../Image Folder/logo.png">
+
+
+    <header class="header">
+
+        <nav>
+            <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="./AboutChoCoLat.html">About</a></li>
+                <li><a class="link" href="Features of choc o lat.html">Features</a></li>
+                <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
+                <li><a class="link" href="Accessability.html">Accessibility</a></li>
+                <li><a class="link" href="ContactUs.html">Contact Us</a></li>
+                <li><a class="link" href="Newsletter.html">Newsletter</a></li>
+                <li><a class="link" href="Feedback.html">Feedback</a></li>
+                <li><a class="link" href="Response.html">Response</a></li>
+            </ul>
+
+            <!-- JavaScript to Toggle Menu -->
+            <script>
+                function toggleMenu() {
+                    document.getElementById("nav-menu").classList.toggle("active");
+                }
+            </script>
+        </nav>
+    </header>
     <ul class="content">
         <h2> Introduction​</h2>
-    <table>
-        <tr>
-            <td><p align="left">Chocolate is a famous snack product all around the world. It was originally made with coco beans, to make the milk chocolate with a sweet taste by adding sugar. Ever since milk chocolate was made it has been sold all around the supermarkets and in shopping centers for people to purchase. However, chocolate is rich in carbohydrates, it has many health benefits and is a suitable source of quick energy. Although there are hazards of chocolate where it contains certain amounts of caffeine and theobromine which is highly risky and toxic for dogs. Most of the chocolate was made in some European countries such as in Germany, Belgium, Italy and Poland.​</p></td>
-            <td><img src="../Image Folder/chocolate4.png" alt="" align="right"></td>
-            <td><img src="../Image Folder/chocolate6.png" alt="" align="right"></td>
-            <td><img src="../Image Folder/chocolate7.png" alt="" align="right"></td>
-        </tr>
-        <tr>
-            <td><p>© 2024 Choc O Lat. All rights reserved.</p></td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td>
+                    <p>Chocolate is a famous snack product all around the world. It was originally made with coco beans,
+                        to make the milk chocolate with a sweet taste by adding sugar. Ever since milk chocolate was
+                        made it has been sold all around the supermarkets and in shopping centers for people to
+                        purchase. However, chocolate is rich in carbohydrates, it has many health benefits and is a
+                        suitable source of quick energy. Although there are hazards of chocolate where it contains
+                        certain amounts of caffeine and theobromine which is highly risky and toxic for dogs. Most of
+                        the chocolate was made in some European countries such as in Germany, Belgium, Italy and
+                        Poland.​</p>
+                </td>
+                <td><img src="../Image Folder/chocolate4.png" alt=""></td>
+                <td><img src="../Image Folder/chocolate6.png" alt=""></td>
+                <td><img src="../Image Folder/chocolate7.png" alt=""></td>
+            </tr>
+
+        </table>
     </ul>
-    
-    
+    <footer>
+        <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
