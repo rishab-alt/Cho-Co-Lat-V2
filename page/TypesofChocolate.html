@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/CSS.css">
-    <title>TypesofChocolate</title>
+    <title>Types of Chocolate</title>
 </head>
-<body>
-  <img class="header_img" src="../Image Folder/logo.png">
 
-    
+<body>
+    <!-- Logo Image -->
+    <img class="header_img" src="../Image Folder/logo.png" alt="Choc O Lat Logo">
+
+    <!-- Header Section -->
     <header class="header">
-        
         <nav>
             <div class="nav-toggle" onclick="toggleMenu()">☰</div>
             <ul id="nav-menu">
-              <li><a class="link" href="../index.html">Home</a></li>
-              <li><a class="link" href="./AboutChoCoLat.html">About</a></li>
-              <li><a class="link" href="Features of choc o lat.html">Features</a></li>
-              <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
-              <li><a class="link" href="Accessability.html">Accessibility</a></li>
-              <li><a class="link" href="ContactUs.html">Contact Us</a></li>
-              <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-              <li><a class="link" href="Feedback.html">Feedback</a></li>
-              <li><a class="link" href="Response.html">Response</a></li>
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="./AboutChoCoLat.html">About</a></li>
+                <li><a class="link" href="Features of choc o lat.html">Features</a></li>
+                <li><a class="link" href="TypesofChocolate.html">Types of Chocolate</a></li>
+                <li><a class="link" href="Accessability.html">Accessibility</a></li>
+                <li><a class="link" href="ContactUs.html">Contact Us</a></li>
+                <li><a class="link" href="Newsletter.html">Newsletter</a></li>
+                <li><a class="link" href="Response.html">Response</a></li>
             </ul>
-          
-          <!-- JavaScript to Toggle Menu -->
-          <script>
-            function toggleMenu() {
-              document.getElementById("nav-menu").classList.toggle("active");
-            }
-          </script>
-          </nav>
-          </header>
-           
-        <ul class="content">
-      
-            <img src="../Image Folder/Chocolate 17.png" alt="">
-            <img src="../Image Folder/chocolate8.png" alt="">
-            <img src="../Image Folder/chocolate9.png" alt="">
-            <p>© 2024 Choc O Lat. All rights reserved.</p>
-        </ul>
 
-        <footer>
-            <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
-        </footer>
+            <!-- JavaScript to Toggle Menu -->
+            <script>
+                function toggleMenu() {
+                    document.getElementById("nav-menu").classList.toggle("active");
+                }
+            </script>
+        </nav>
+    </header>
 
-    </body>
+    <!-- Main Content Section -->
+    <main>
+        <section class="content">
+            <h2 class="section-heading">Types of Chocolate</h2>
+            <p class="content-text">
+                There are different types of chocolate available, including dark, milk, and white chocolate. Each type
+                varies based on the proportion of cocoa solids, milk, and sugar. Dark chocolate contains a higher
+                percentage of cocoa, providing a rich, intense flavor, while milk chocolate is sweeter due to the
+                addition of milk powder or condensed milk. White chocolate, on the other hand, is made primarily from
+                cocoa butter, sugar, and milk, giving it a creamy and smooth texture.
+            </p>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="image-gallery">
+            <img class="responsive-img" src="../Image Folder/Chocolate 17.png" alt="Dark Chocolate">
+            <img class="responsive-img" src="../Image Folder/chocolate8.png" alt="Milk Chocolate">
+            <img class="responsive-img" src="../Image Folder/chocolate9.png" alt="White Chocolate">
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>

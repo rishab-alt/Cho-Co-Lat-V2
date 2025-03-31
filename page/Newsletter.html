@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choc O Lat</title>
+  <title>Choc O Lat - Newsletter</title>
   <link rel="stylesheet" href="../CSS/CSS.css">
-
-
-
 </head>
 
 <body>
-  <img class="header_img" src="../Image Folder/logo.png">
+  <!-- Logo -->
+  <img class="header_img" src="../Image Folder/logo.png" alt="Choc O Lat Logo">
 
+  <!-- Header and Navigation -->
   <header class="header">
-
     <nav>
       <div class="nav-toggle" onclick="toggleMenu()">☰</div>
       <ul id="nav-menu">
@@ -26,32 +24,78 @@
         <li><a class="link" href="Accessability.html">Accessibility</a></li>
         <li><a class="link" href="ContactUs.html">Contact Us</a></li>
         <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-        <li><a class="link" href="Feedback.html">Feedback</a></li>
         <li><a class="link" href="Response.html">Response</a></li>
       </ul>
-
-      <!-- JavaScript to Toggle Menu -->
-      <script>
-        function toggleMenu() {
-          document.getElementById("nav-menu").classList.toggle("active");
-        }
-      </script>
     </nav>
-    <ul class="content">
-      <p> A newsletter is an email sent to people who signed up for it, which gives updates on specific topics.​ It
-        encourages people to check the website more and stay interested and informed about the latest updates in the
-        website.​</p>
-      <p> By signing up, users will receive emails notifying them about new store openings in other cities or countries.
+
+    <!-- JavaScript to Toggle Menu -->
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="content">
+      <p>A newsletter is an email sent to people who signed up for it, which gives updates on specific topics. It
+        encourages people to check the website more and stay interested and informed about the latest updates.</p>
+      <p>By signing up, users will receive emails notifying them about new store openings in other cities or countries.
         Additionally, they will be alerted if the website experiences any downtime and informed about when it will be
         back online.</p>
-      <p> ​When users sign up for a newsletter, they’ll receive exclusive deals and promo codes directly in their inbox.
+      <p>When users sign up for a newsletter, they’ll receive exclusive deals and promo codes directly in their inbox.
         This ensures they are always informed about upcoming sales and discounts, giving them early access to products
         and special offers.</p>
-      <img src="../Image Folder/Newsletter.png" alt="">
-    </ul>
 
-    <footer>
-      <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
-    </footer>
+      <!-- Newsletter Signup Section -->
+      <section class="newsletter">
+        <h2>Get on the Mailing List!</h2>
+        <p>Sign up to receive exclusive deals, latest updates, and exciting offers.</p>
+
+        <!-- Newsletter Form -->
+        <form id="newsletter-form" onsubmit="return submitNewsletter(event)">
+          <div class="form-group">
+            <label for="email">Enter Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+          </div>
+          <button type="submit" class="submit-btn">Subscribe</button>
+          <p id="form-message" class="hidden"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Form Submission -->
+  <script>
+    function submitNewsletter(event) {
+      event.preventDefault();
+      const emailInput = document.getElementById("email");
+      const message = document.getElementById("form-message");
+
+      if (emailInput.value === "") {
+        message.innerText = "Please enter a valid email.";
+        message.style.color = "red";
+        message.classList.remove("hidden");
+        return false;
+      }
+
+      // Show success message
+      message.innerText = `Thank you for subscribing, ${emailInput.value}!`;
+      message.style.color = "green";
+      message.classList.remove("hidden");
+
+      // Clear the form after submission
+      emailInput.value = "";
+      return false;
+    }
+  </script>
+
+</body>
 
 </html>
