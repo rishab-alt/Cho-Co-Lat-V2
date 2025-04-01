@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/CSS.css">
-  <title>About Cho Co Lat </title>
+  <title>About Cho Co Lat</title>
 </head>
 
 <body>
-  <img class="header_img" src="../Image Folder/logo.png">
+  <!-- Logo -->
+  <img class="header_img" src="../Image Folder/logo.png" alt="Choc O Lat Logo">
 
+  <!-- Header and Navigation -->
   <header class="header">
     <nav>
       <div class="nav-toggle" onclick="toggleMenu()">☰</div>
@@ -22,32 +24,40 @@
         <li><a class="link" href="Accessability.html">Accessibility</a></li>
         <li><a class="link" href="ContactUs.html">Contact Us</a></li>
         <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-        <li><a class="link" href="Feedback.html">Feedback</a></li>
         <li><a class="link" href="Response.html">Response</a></li>
       </ul>
-
-      <!-- JavaScript to Toggle Menu -->
-      <script>
-        function toggleMenu() {
-          document.getElementById("nav-menu").classList.toggle("active");
-        }
-      </script>
     </nav>
+
+    <!-- JavaScript to Toggle Menu -->
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
   </header>
-  <h2> Introduction​</h2>
-  <tr>
 
-    <td><img src="../Image Folder/Choclate 15.png" alt=""> </td>
+  <!-- Introduction Section -->
+  <main>
+    <h2 class="intro-heading">Introduction</h2>
     <div class="aboutdiv">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4vXb8Tt_VCU?si=RVAxSTb-yH0x3_Qh"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img src="../Image Folder/Chocolate 16.png" alt="">
-      <img src="../Image Folder/chocolate5.png" alt="">
-    </div>
+      <!-- Main Chocolate Image -->
+      <img class="responsive-img" src="../Image Folder/Choclate 15.png" alt="Delicious Chocolate">
 
-  </tr>
+      <!-- YouTube Video -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4vXb8Tt_VCU?si=RVAxSTb-yH0x3_Qh"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <!-- Additional Chocolate Images -->
+      <img class="responsive-img" src="../Image Folder/Chocolate 16.png" alt="Chocolate Variety">
+      <img class="responsive-img" src="../Image Folder/chocolate5.png" alt="Assorted Chocolates">
+    </div>
+  </main>
+
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
   </footer>

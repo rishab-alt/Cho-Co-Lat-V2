@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/CSS.css">
-
-  <title>ContactUs</title>
+  <title>Contact Us</title>
+</head>
 
 <body>
-  <img class="header_img" src="../Image Folder/logo.png">
+  <!-- Logo -->
+  <img class="header_img" src="../Image Folder/logo.png" alt="Choc O Lat Logo">
 
-
+  <!-- Header Section -->
   <header class="header">
-
     <nav>
       <div class="nav-toggle" onclick="toggleMenu()">☰</div>
       <ul id="nav-menu">
@@ -24,7 +24,6 @@
         <li><a class="link" href="Accessability.html">Accessibility</a></li>
         <li><a class="link" href="ContactUs.html">Contact Us</a></li>
         <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-        <li><a class="link" href="Feedback.html">Feedback</a></li>
         <li><a class="link" href="Response.html">Response</a></li>
       </ul>
 
@@ -36,17 +35,63 @@
       </script>
     </nav>
   </header>
-  <ul class="content">
+
+  <!-- Contact Info -->
+  <section class="content">
     <p>Our contact page is a crucial element of our Choc O Lat website because it brings many purposes by arranging
       support for current customers to connect with buyers and to give us any feedback as possible about the products we
       offer and if they want to ask us any questions and what we might change in our website if they give us bad reviews
-      that they are not pleased with. </p>
-    <img src="../Image Folder/Contact Us.png" alt="">
-  </ul>
+      that they are not pleased with.
+    </p>
+  </section>
 
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="POST" id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
   </footer>
-  </nav>
+
+  <!-- Basic Form Validation (Optional) -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      if (!name || !email || !subject || !message) {
+        alert('Please fill out all fields.');
+        event.preventDefault(); // Stop form submission if fields are empty
+      }
+    });
+  </script>
+</body>
 
 </html>

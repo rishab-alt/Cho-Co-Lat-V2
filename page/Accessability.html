@@ -5,18 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/CSS.css">
-
-  <title>Accessability</title>
-
-  </ul>
-
+  <title>Accessibility</title>
 </head>
 
 <body>
 
-  <img class="header_img" src="../Image Folder/logo.png">
+  <!-- Logo Image -->
+  <img class="header_img" src="../Image Folder/logo.png" alt="Choc O Lat Logo">
 
-
+  <!-- Header Section -->
   <header class="header">
     <nav>
       <div class="nav-toggle" onclick="toggleMenu()">☰</div>
@@ -28,27 +25,46 @@
         <li><a class="link" href="Accessability.html">Accessibility</a></li>
         <li><a class="link" href="ContactUs.html">Contact Us</a></li>
         <li><a class="link" href="Newsletter.html">Newsletter</a></li>
-        <li><a class="link" href="Feedback.html">Feedback</a></li>
         <li><a class="link" href="Response.html">Response</a></li>
       </ul>
 
-      <!-- JavaScript to Toggle Menu -->
+      <!-- JavaScript for Toggle Menu -->
       <script>
         function toggleMenu() {
           document.getElementById("nav-menu").classList.toggle("active");
         }
       </script>
     </nav>
-
   </header>
-  <p> Accessibility would be a major part of our Choc O lat website for all people especially those with disabilities
-    should get access if they have visual impairments, auditory impairments, motor disabilities, and cognitive
-    impairments. Etc. These are all that we would include in our website.</p>
-  <img src="../Image Folder/Web Accessability 1.png" alt="">
-  <img src="../Image Folder/Web Accessability 2 .png" alt="">
-  <ul>
-    <footer>
-      <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
-    </footer>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="accessibility-section">
+      <h2 class="section-heading">Accessibility for All Users</h2>
+      <p class="content-text">
+        Accessibility is a major part of our Choc O Lat website. We aim to ensure that everyone, especially those with
+        disabilities, can easily access our content. Our site is designed to accommodate users with:
+      </p>
+      <ul class="accessibility-list">
+        <li>✅ Visual Impairments</li>
+        <li>✅ Auditory Impairments</li>
+        <li>✅ Motor Disabilities</li>
+        <li>✅ Cognitive Impairments</li>
+      </ul>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-gallery">
+      <img class="responsive-img" src="../Image Folder/Web Accessability 1.png" alt="Web Accessibility Design">
+      <img class="responsive-img" src="../Image Folder/Web Accessability 2 .png" alt="Accessible User Interface">
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Choc O Lat. All rights reserved.</p>
+  </footer>
+
+</body>
 
 </html>
